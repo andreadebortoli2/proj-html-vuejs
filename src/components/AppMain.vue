@@ -29,9 +29,6 @@ export default {
 </script>
 
 <template>
-    <div>
-        * Main:
-    </div>
     <Hero />
     <Service />
     <StartProject />
