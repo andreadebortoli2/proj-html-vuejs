@@ -19,7 +19,8 @@ export default {
                 <li class="home">Home</li>
                 <li>About</li>
                 <template v-for="link in store.quickLinks">
-                    <li>{{ link }}</li>
+                    <li><a :href="`#${link}`">{{ link }}</a>
+                    </li>
                 </template>
             </ul>
             <button class="sign_in">Sign In</button>

@@ -7,6 +7,7 @@ import PriceList from './Main/PriceList.vue';
 import Blog from './Main/Blog.vue';
 import Testimonial from './Main/Testimonial.vue';
 import Subscribe from './Main/Subscribe.vue';
+import { store } from '../store';
 
 export default {
     name: 'AppMain',
@@ -22,7 +23,7 @@ export default {
     },
     data() {
         return {
-
+            store,
         }
     }
 }
@@ -36,7 +37,19 @@ export default {
     <PriceList />
     <Blog />
     <Testimonial />
+    <div class="partners">
+        <template v-for="partner in store.partners">
+            <img :src="partner.image" alt="">
+        </template>
+    </div>
     <Subscribe />
 </template>
 
-<style scoped></style>
+<style scoped>
+.partners {
+
+    img {
+        padding: 0 2rem;
+    }
+}
+</style>

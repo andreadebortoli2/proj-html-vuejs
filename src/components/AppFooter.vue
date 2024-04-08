@@ -32,7 +32,7 @@ export default {
                     <li>{{ link }}</li>
                 </ul>
             </div>
-            <div class="contact_us">
+            <div class="contact_us" id="Contact">
                 <h6>Contacts Us</h6>
                 <div v-for="(contact, key) in store.contacts">
                     <span>{{ key }}:</span> {{ contact }}
