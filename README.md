@@ -26,7 +26,8 @@ props, creando una struttura dati idonea.
         ?component? -lower
 
 # create each component structure
-    -create inner compponents if needed
+    -create inner compponents if needed:
+        -create store for header and footer menus
 
 # add style to each component
     -sass?

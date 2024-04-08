@@ -1,12 +1,12 @@
 <script>
-import Hero from './Hero.vue';
-import Service from './Service.vue';
-import StartProject from './StartProject.vue';
-import Portfolio from './Portfolio.vue';
-import PriceList from './PriceList.vue';
-import Blog from './Blog.vue';
-import Testimonial from './Testimonial.vue';
-import Subscribe from './Subscribe.vue';
+import Hero from './Main/Hero.vue';
+import Service from './Main/Service.vue';
+import StartProject from './Main/StartProject.vue';
+import Portfolio from './Main/Portfolio.vue';
+import PriceList from './Main/PriceList.vue';
+import Blog from './Main/Blog.vue';
+import Testimonial from './Main/Testimonial.vue';
+import Subscribe from './Main/Subscribe.vue';
 
 export default {
     name: 'AppMain',

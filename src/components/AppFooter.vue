@@ -11,7 +11,7 @@ export default {
 
 <template>
     <div>
-        * Footer:
+        Footer:
     </div>
 </template>
 
