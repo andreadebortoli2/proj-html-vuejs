@@ -1,6 +1,6 @@
 <script>
 import SectionCardHeader from './SectionCardHeader.vue';
-import TestimonialCard from './TestimonialCard.vue';
+import TestimonialCard from './Cards/TestimonialCard.vue';
 import { store } from '../../store';
 
 export default {

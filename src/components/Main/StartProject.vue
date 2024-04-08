@@ -1,6 +1,20 @@
 <script>
+import BlueCard from './Cards/BlueCard.vue'
+
 export default {
     name: 'StartProject',
+    components: {
+        BlueCard,
+    },
+    data() {
+        return {
+            card: {
+                section: 'Start Your Project',
+                titles: ['Grow Your Business', 'With Our Strategy'],
+                text: 'When, while the lovelly valley teems vapour around me and the meridian sun strikes the upper surface. ofthe impenetrable foliage of my trees, and but a few stray gleams steal into the inner scanctuary,',
+            },
+        }
+    }
 }
 </script>
 
@@ -11,15 +25,7 @@ export default {
             <img class="top_image" src="/public/images/men-data.png" alt="">
         </div>
         <div class="right">
-            <h4>Start Your Project</h4>
-            <h2>Grow Your Business</h2>
-            <h2>With Our Strategy</h2>
-            <p>
-                When, while the lovelly valley teems vapour around me and the meridian sun strikes the upper surface. of
-                the impenetrable foliage of my trees, and but a few stray gleams steal into the inner scanctuary,
-            </p>
-            <button class="try_it">Try It Now</button>
-            <button class="explore">Explore More</button>
+            <BlueCard :card="card" />
         </div>
     </div>
 </template>

@@ -1,6 +1,7 @@
 import { reactive } from "vue";
 
 export const store = reactive({
+    quickLinks: ['Services', 'Blog', 'Contact', 'Portfolio'],
     ourServices: [
         {
             title: 'Data Analysis',
@@ -59,7 +60,6 @@ export const store = reactive({
             image: '/public/images/client-3.png',
         },
     ],
-    quickLinks: ['Services', 'Blog', 'Contact', 'Portfolio'],
     resources: ['Art Design', 'Computer', 'II News', 'Networking', 'Web Security'],
     contacts: {
         Address: 'Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, TX /6051',

@@ -1,20 +1,26 @@
 <script>
+import BlueCard from './Cards/BlueCard.vue'
+
 export default {
     name: 'Hero',
+    components: {
+        BlueCard,
+    },
+    data() {
+        return {
+            card: {
+                titles: ['Business Planning', 'Digital Technology', 'Modern Solution!'],
+                text: 'When, while the lovelly valley teems vapour around me and the meridian sun strikes the upper surface.',
+            },
+        }
+    }
 }
 </script>
 
 <template>
     <div id="hero">
         <div class="left">
-            <h2>Businnes Planning</h2>
-            <h2>Digital Technology</h2>
-            <h2>Modern Solution!</h2>
-            <p>
-                When, while the lovelly valley teems vapour around me and the meridian sun strikes the upper surface.
-            </p>
-            <button class="try_it">Try It Now</button>
-            <button class="explore">Explore More</button>
+            <BlueCard :card="card" />
         </div>
         <div class="right">
             <img src="/public/images/header.png" alt="">

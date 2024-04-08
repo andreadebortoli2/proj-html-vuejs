@@ -1,6 +1,6 @@
 <script>
 import SectionCardHeader from "./SectionCardHeader.vue";
-import ServiceCard from './ServiceCard.vue'
+import ServiceCard from './Cards/ServiceCard.vue'
 import { store } from "../../store.js";
 
 export default {
