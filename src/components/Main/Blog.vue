@@ -1,13 +1,17 @@
 <script>
 import SectionCardHeader from './SectionCardHeader.vue';
+import PostCard from './Cards/PostCard.vue';
+import { store } from '../../store';
 
 export default {
     name: 'Blog',
     components: {
         SectionCardHeader,
+        PostCard,
     },
     data() {
         return {
+            store,
             blogHeader: {
                 id: 'Blog',
                 section: 'Blog',
@@ -22,12 +26,21 @@ export default {
 <template>
     <div>
         <SectionCardHeader class="header" :header="blogHeader" />
-        <div class="card">PLACEHOLDER</div>
+        <div class="posts">
+            <template v-for="post in store.posts">
+                <PostCard :post="post" />
+            </template>
+        </div>
     </div>
 </template>
 
 <style scoped>
 .header {
     text-align: center;
+}
+
+.posts {
+    display: flex;
+    justify-content: space-between;
 }
 </style>

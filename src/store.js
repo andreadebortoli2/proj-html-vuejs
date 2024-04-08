@@ -20,6 +20,29 @@ export const store = reactive({
             image: 'Group-566.png',
         },
     ],
+    posts: [
+        {
+            image: 'headway-537308-unsplash-1380x703.jpg',
+            date: 'April 21, 2019',
+            author: 'Paul',
+            title: 'Amazon gets CCI no to acquire 49% stake in',
+            text: 'When, while the lovelly valley teems vapour around me and the meridian sun strikes the upper surface. ofthe impenetrable foliage of my trees, and but a few stray gleams steal into the inner scanctuary,',
+        },
+        {
+            image: 'studio-republic-644339-unsplash-1380x703.jpg',
+            date: 'April 21, 2019',
+            author: 'Paul',
+            title: 'Clearing Corporation get SEBI nod to invest in overnight funds',
+            text: 'When, while the lovelly valley teems vapour around me and the meridian sun strikes the upper surface. ofthe impenetrable foliage of my trees, and but a few stray gleams steal into the inner scanctuary,',
+        },
+        {
+            image: 'timon-studler-63413-unsplash-1380x703.jpg',
+            date: 'April 21, 2019',
+            author: 'Paul',
+            title: 'Shabnam Dhillion, wife of RSSB chief Gurinder Dhillon, passes away in London',
+            text: 'When, while the lovelly valley teems vapour around me and the meridian sun strikes the upper surface. ofthe impenetrable foliage of my trees, and but a few stray gleams steal into the inner scanctuary,',
+        },
+    ],
     testimonials: [
         {
             image: 'szabo-viktor-1266895-unsplash-1024x1024.png',
