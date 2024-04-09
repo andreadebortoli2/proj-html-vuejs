@@ -1,8 +1,13 @@
 @use './Variables.scss' as *;
 
 .partners {
-    display: flex;
-    justify-content: space-between;
+    background-color: $background-color-primary;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
 
     .partner {
         height: 100%;

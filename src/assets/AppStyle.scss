@@ -3,6 +3,7 @@
 @use './partials/ServiceStyle';
 @use './partials/SectionCardHeader';
 @use './partials/StartProjectStyle';
+@use './partials/Portfolio';
 @use './partials/BlogStyle';
 @use './partials/Testimonials';
 @use './partials/PartnersStyle';
@@ -16,8 +17,8 @@
     box-sizing: border-box;
 }
 
-:root {
-    --background_primary: #527CEB
+body {
+    overflow-x: hidden;
 }
 
 .container {

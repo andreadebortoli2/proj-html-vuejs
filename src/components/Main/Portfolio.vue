@@ -17,6 +17,11 @@ export default {
             },
             portfolioSlides: [
                 {
+                    image: '/public/images/8wa60okr-1-790x576.jpg',
+                    name: 'Basket of Flower on table',
+                    comment: 'Branding Strategy',
+                },
+                {
                     image: '/public/images/DRY-1-790x576.jpg',
                     name: 'Purinky Products',
                     comment: 'Digital Experience',
@@ -36,11 +41,7 @@ export default {
                     name: 'Satisfy Poster',
                     comment: 'Branding Strategy',
                 },
-                {
-                    image: '/public/images/8wa60okr-1-790x576.jpg',
-                    name: 'Basket of Flower on table',
-                    comment: 'Branding Strategy',
-                },
+
             ],
             activeSlide: 1,
         }
@@ -49,57 +50,15 @@ export default {
 </script>
 
 <template>
-    <div>
-        <SectionCardHeader :header="portfolioHeader" />
+    <div class="portfolio">
+
+        <div class="header">
+            <SectionCardHeader :header="portfolioHeader" />
+        </div>
 
         <PortfolioCarouselCard :slidesList="portfolioSlides" />
 
     </div>
 </template>
 
-<style scoped>
-.slider {
-
-    .commands {
-        background-color: purple;
-    }
-
-    .slides {
-        display: flex;
-        overflow-x: hidden;
-
-        .slide {
-            margin: 0 1rem;
-            height: 300px;
-
-            &.highlight {
-                border: 2px solid orange;
-                justify-self: center;
-            }
-
-            img {
-                height: 100%;
-            }
-
-            .slide_info {
-                display: flex;
-                justify-content: space-between;
-            }
-        }
-
-    }
-
-    .thumbs {
-        display: flex;
-
-        .thumb {
-            background-color: orange;
-
-            &.active {
-                color: orangered;
-                background-color: pink;
-            }
-        }
-    }
-}
-</style>
+<style scoped></style>

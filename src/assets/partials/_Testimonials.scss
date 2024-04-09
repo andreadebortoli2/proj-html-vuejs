@@ -1,6 +1,8 @@
 @use './Variables.scss' as *;
 
 .testimonials {
+    background-color: $background-color-primary;
+
     .header {
         text-align: center;
     }

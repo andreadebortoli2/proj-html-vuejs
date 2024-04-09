@@ -45,12 +45,14 @@ export default {
 </script>
 
 <template>
-    <div class="testimonials container">
-        <SectionCardHeader class="header" :header="testimonialHeader" />
-        <div class="grid">
-            <template v-for="card in testimonials">
-                <TestimonialCard :card="card" />
-            </template>
+    <div class="testimonials">
+        <div class="container">
+            <SectionCardHeader class="header" :header="testimonialHeader" />
+            <div class="grid">
+                <template v-for="card in testimonials">
+                    <TestimonialCard :card="card" />
+                </template>
+            </div>
         </div>
     </div>
 </template>

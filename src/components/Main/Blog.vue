@@ -46,8 +46,8 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <div class="blog">
+    <div class="blog">
+        <div class="container">
             <SectionCardHeader class="header" :header="blogHeader" />
             <div class="posts">
                 <template v-for="(post, index) in posts">

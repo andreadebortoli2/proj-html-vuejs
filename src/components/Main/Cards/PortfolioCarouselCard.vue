@@ -5,96 +5,48 @@ import { Carousel, Slide, Pagination } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
 export default defineComponent({
-    name: 'PortfolioCarouselCard',
-    components: {
-        Carousel,
-        Slide,
-        Pagination
+  name: 'PortfolioCarouselCard',
+  components: {
+    Carousel,
+    Slide,
+    Pagination,
+  },
+  props: {
+    slidesList: Array,
+  },
+  methods: {
+    next() {
+      this.$refs.carousel.next()
     },
-    props: {
-        slidesList: Array,
+    prev() {
+      this.$refs.carousel.prev()
     },
-    methods: {
-        next() {
-            this.$refs.carousel.next()
-        },
-        prev() {
-            this.$refs.carousel.prev()
-        },
-    },
+  },
 })
 </script>
 
 <template>
-    <div>
-        <button @click="prev">Prev</button>
+  <div class="carousel">
+    <div class="commands">
+      <button class="prev" @click="prev"><i class="fa-solid fa-arrow-left"></i></button>
 
-        <button @click="next">Next</button>
+      <button class="next" @click="next"><i class="fa-solid fa-arrow-right"></i></button>
     </div>
-    <Carousel ref="carousel" snapAlign="start" :items-to-show="3.5" :wrap-around="true">
-        <Slide v-for="slide in slidesList" :key="slide">
-            <div class="carousel__item">
-                <img width="100%" :src="slide.image" alt="">
-                <div class="card_details">
-                    <span>{{ slide.name }}</span>-<span>{{ slide.comment }}</span>
-                </div>
-            </div>
-        </Slide>
-        <template #addons>
-            <Pagination />
-        </template>
+    <Carousel ref="carousel" snapAlign="start" :items-to-show="3.8" :wrap-around="true" :transition="500">
+      <Slide v-for="slide in slidesList" :key="slide">
+        <div class="carousel__item">
+          <img width="100%" :src="slide.image" alt="">
+          <div class="card_details">
+            <div class="title">{{ slide.name }}</div>
+            <div class="comment">{{ slide.comment }}</div>
+          </div>
+        </div>
+      </Slide>
+      <template #addons>
+        <Pagination />
+      </template>
     </Carousel>
-
+  </div>
 </template>
-<style scoped>
-/*style slides.
-/* .carousel__slide {
-  scroll-snap-stop: auto;
-  flex-shrink: 0;
-  margin: 0;
-  position: relative;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-} */
-/* style pagination:
-/* .carousel__pagination {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  line-height: 0;
-  margin: 10px 0 0;
-  padding: 0;
-}
-
-.carousel__pagination-button {
-  display: block;
-  border: 0;
-  margin: 0;
-  cursor: pointer;
-  padding: var(--vc-pgn-margin);
-  background: transparent;
-}
-
-.carousel__pagination-button::after {
-  display: block;
-  content: '';
-  width: var(--vc-pgn-width);
-  height: var(--vc-pgn-height);
-  border-radius: var(--vc-pgn-border-radius);
-  background-color: var(--vc-pgn-background-color);
-}
-
-.carousel__pagination-button--active::after {
-  background-color: var(--vc-pgn-active-color);
-}
-
-@media(hover: hover) {
-  .carousel__pagination-button:hover::after {
-    background-color: var(--vc-pgn-active-color);
-  }
-} */
-</style>
+<style scoped></style>

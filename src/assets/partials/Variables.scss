@@ -1,3 +1,4 @@
+$background-color-primary: #0202301A;
 $background-color-secondary: #FFFFFF;
 $text-color-primary: #000000;
 $text-color-secondary: #FFFFFF;
@@ -10,6 +11,8 @@ $button-try-color-background: linear-gradient(to right, #B6246E, #F9636B), linea
 $button-explore-color-primary: #527CEB;
 $button-explore-color-secondary: #03A7D3E6;
 $button-explore-color-background: linear-gradient(to right, #03A7D3E6, #527CEB), linear-gradient(to right, #000000B3, #000000E6);
+$carousel-pagination: #BBBBBB;
+$carousel-pagination-active: linear-gradient(#B6246E, #F9636B), linear-gradient(to right, #FFFFFFE6, #FFFFFFD4);
 
 
 @mixin background-primary {

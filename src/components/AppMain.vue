@@ -49,10 +49,12 @@ export default {
     <PriceList />
     <Blog />
     <Testimonial />
-    <div class="partners container">
-        <template v-for="partner in partners">
-            <img class="partner" :src="partner.image" alt="">
-        </template>
+    <div class="partners">
+        <div class="container">
+            <template v-for="partner in partners">
+                <img class="partner" :src="partner.image" alt="">
+            </template>
+        </div>
     </div>
     <Subscribe />
 </template>

@@ -1,6 +1,7 @@
 @use './Variables.scss' as *;
 
 .blog {
+    background-color: $background-color-primary;
 
     .header {
         text-align: center;

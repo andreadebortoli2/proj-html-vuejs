@@ -31,6 +31,7 @@ props, creando una struttura dati idonea.
 
 # add style to each component
     -sass?
+# add styles hover
 
 # add 'extras':
     -portfolio carousel

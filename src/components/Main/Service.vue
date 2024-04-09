@@ -40,15 +40,17 @@ export default {
 </script>
 
 <template>
-    <div class="container services">
-        <SectionCardHeader class="header" :header="serviceHeader" />
-        <div class="grid">
-            <template v-for="card in ourServices">
-                <ServiceCard :card="card" />
-            </template>
-        </div>
-        <div class="btn">
-            <button>View All Services</button>
+    <div class="services">
+        <div class="container">
+            <SectionCardHeader class="header" :header="serviceHeader" />
+            <div class="grid">
+                <template v-for="card in ourServices">
+                    <ServiceCard :card="card" />
+                </template>
+            </div>
+            <div class="btn">
+                <button>View All Services</button>
+            </div>
         </div>
     </div>
 </template>
