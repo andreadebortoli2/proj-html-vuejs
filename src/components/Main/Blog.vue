@@ -39,29 +39,24 @@ export default {
                     text: 'When, while the lovelly valley teems vapour around me and the meridian sun strikes the upper surface. ofthe impenetrable foliage of my trees, and but a few stray gleams steal into the inner scanctuary,',
                 },
             ],
+            highlighted: 0,
         }
     }
 }
 </script>
 
 <template>
-    <div>
-        <SectionCardHeader class="header" :header="blogHeader" />
-        <div class="posts">
-            <template v-for="post in posts">
-                <PostCard :post="post" />
-            </template>
+    <div class="container">
+        <div class="blog">
+            <SectionCardHeader class="header" :header="blogHeader" />
+            <div class="posts">
+                <template v-for="(post, index) in posts">
+                    <PostCard :post="post" :class="highlighted === index ? 'highlight' : ''"
+                        @click=" highlighted = index" />
+                </template>
+            </div>
         </div>
     </div>
 </template>
 
-<style scoped>
-.header {
-    text-align: center;
-}
-
-.posts {
-    display: flex;
-    justify-content: space-between;
-}
-</style>
+<style scoped></style>

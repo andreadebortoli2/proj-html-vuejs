@@ -17,6 +17,12 @@ $button-explore-color-background: linear-gradient(to right, #03A7D3E6, #527CEB),
     background-image: linear-gradient(#000000B3, #000000E6);
 }
 
+@mixin background-post {
+    background-color: #527CEB;
+    background-image: linear-gradient(to bottom right, #000000E6, #000000B3);
+
+}
+
 @mixin button-try {
     color: $text-color-nav;
     background-image: linear-gradient(to right, #B6246E, #F9636B), linear-gradient(to right, #FFFFFFE6, #FFFFFFD4);
