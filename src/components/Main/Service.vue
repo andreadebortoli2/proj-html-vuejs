@@ -40,23 +40,17 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class="container">
         <SectionCardHeader class="header" :header="serviceHeader" />
         <div class="grid">
             <template v-for="card in ourServices">
                 <ServiceCard :card="card" />
             </template>
         </div>
-        <button>View All Services</button>
+        <div class="btn">
+            <button>View All Services</button>
+        </div>
     </div>
 </template>
 
-<style scoped>
-.header {
-    text-align: center;
-}
-
-.grid {
-    display: flex;
-}
-</style>
+<style scoped></style>

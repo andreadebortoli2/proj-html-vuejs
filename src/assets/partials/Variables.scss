@@ -3,11 +3,11 @@ $text-color-primary: #000000;
 $text-color-secondary: #FFFFFF;
 $text-color-nav: #E0E0E0;
 $text-color-bluecard: #FFFFFF1F;
+$text-small-color: #00000080;
 $button-try-color-primary: #B6246E;
 $button-try-color-secondary: #F9636B;
 $button-explore-color-primary: #527CEB;
 $button-explore-color-secondary: #03A7D3E6;
-$button-try-background: linear-gradient(to right, #B6246E, #F9636B);
 
 @mixin background-primary {
     background-color: #527CEB;
