@@ -35,3 +35,5 @@ props, creando una struttura dati idonea.
 # add 'extras':
     -portfolio carousel
     -add 'logic' to back to top button
+    -add chat baloon just fixed without function
+    -look for image in testimonials rating background

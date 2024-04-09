@@ -7,20 +7,15 @@ export default {
 <template>
     <div class="subscribe">
         <div>
-            <h3>We Offer Awesome Services</h3>
-            <p>When, while the lovelly valley teems vapour around me and the meridian sun strikes the upper surface.</p>
+            <h2>We Offer Awesome Services</h2>
+            <p>When, while the lovelly valley teems vapour around me and the meridian sun strikes the upper surface.
+            </p>
         </div>
-        <div>
-            <input type="email" name="" id="">
+        <div class="email">
+            <input type="email" name="" id="" placeholder="Enter Your Email Address">
             <button>Subscribe</button>
         </div>
     </div>
 </template>
 
-<style scoped>
-.subscribe {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-</style>
+<style scoped></style>

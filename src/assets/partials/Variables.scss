@@ -6,8 +6,10 @@ $text-color-bluecard: #FFFFFF80;
 $text-small-color: #00000080;
 $button-try-color-primary: #B6246E;
 $button-try-color-secondary: #F9636B;
+$button-try-color-background: linear-gradient(to right, #B6246E, #F9636B), linear-gradient(to right, #FFFFFFE6, #FFFFFFD4);
 $button-explore-color-primary: #527CEB;
 $button-explore-color-secondary: #03A7D3E6;
+$button-explore-color-background: linear-gradient(to right, #03A7D3E6, #527CEB), linear-gradient(to right, #000000B3, #000000E6);
 
 
 @mixin background-primary {

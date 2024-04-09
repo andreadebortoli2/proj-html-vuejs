@@ -1,0 +1,44 @@
+@use './Variables.scss' as *;
+
+.subscribe {
+    width: 90%;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    transform: translate(0, +50%);
+    border-radius: 2rem;
+    background-image: $button-try-color-background;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+        color: $text-color-secondary;
+        font-size: 2rem;
+    }
+
+    p {
+        color: $text-color-bluecard;
+        font-size: 0.8rem;
+    }
+
+    .email {
+        width: 40%;
+        background-color: $background-color-secondary;
+        padding: 0.3rem 0;
+        padding-left: 1rem;
+        border-radius: 3rem;
+        display: flex;
+
+        input {
+            border: none;
+            padding-left: 1rem;
+            flex-grow: 1;
+        }
+
+        button {
+            @include button-explore;
+            height: 3rem;
+            border-radius: 2rem;
+        }
+    }
+}
