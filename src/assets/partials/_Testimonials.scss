@@ -1,0 +1,42 @@
+@use './Variables.scss' as *;
+
+.testimonials {
+    .header {
+        text-align: center;
+    }
+
+    .grid {
+        display: flex;
+        justify-content: space-between;
+        padding: 6rem 0;
+
+        .testimonial {
+            text-align: center;
+            width: 300px;
+
+            img {
+                width: 50%;
+                border-radius: 50%;
+                border: 4px solid $button-try-color-primary;
+            }
+
+            .stars,
+            .stars:before {
+                padding: 2rem 0;
+
+                background: -webkit-linear-gradient(#B6246E, #F9636B, #FFFFFF);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            p {
+                margin: 0 auto;
+                color: $text-small-color;
+            }
+
+            h4.name {
+                padding: 1rem;
+            }
+        }
+    }
+}

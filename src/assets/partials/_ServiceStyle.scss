@@ -1,7 +1,6 @@
 @use './Variables.scss' as *;
 
-.container {
-    padding: 3rem 0;
+.services {
 
     .header {
         text-align: center;
@@ -9,7 +8,7 @@
 
     .grid {
         display: flex;
-        padding: 5rem 0;
+        padding: 6rem 0;
         gap: 3rem;
 
 
@@ -17,7 +16,7 @@
             text-align: center;
 
             img {
-                width: 50%;
+                width: 30%;
                 height: 50%;
                 padding-bottom: 2rem;
             }
@@ -34,7 +33,7 @@
     .btn {
         display: flex;
         justify-content: center;
-        padding-top: 5rem;
+
 
         button {
             @include button-try;

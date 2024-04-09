@@ -40,7 +40,7 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    <div class="container services">
         <SectionCardHeader class="header" :header="serviceHeader" />
         <div class="grid">
             <template v-for="card in ourServices">

@@ -15,20 +15,13 @@ export default {
 <template>
     <div class="testimonial">
         <img :src="imageSrc" alt="">
-        <div class="stars">{{ card.rating }}</div>
+        <div class="stars"><span v-for="full in card.rating"><i class="fa-solid fa-star"></i></span><span
+                v-for="empty in 5 - card.rating"><i class="fa-regular fa-star"></i></span>
+        </div>
         <p>{{ card.text }}</p>
-        <h4>{{ card.name }}</h4>
-        <div>{{ card.position }}</div>
+        <h4 class="name">{{ card.name }}</h4>
+        <p class="position">{{ card.position }}</p>
     </div>
 </template>
 
-<style scoped>
-.testimonial {
-    text-align: center;
-    width: 300px;
-
-    img {
-        width: 100px;
-    }
-}
-</style>
+<style scoped></style>

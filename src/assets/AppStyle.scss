@@ -3,6 +3,7 @@
 @use './partials/ServiceStyle';
 @use './partials/SectionCardHeader';
 @use './partials/StartProjectStyle';
+@use './partials/Testimonials';
 
 
 * {
@@ -18,4 +19,5 @@
 .container {
     width: 90%;
     margin: 0 auto;
+    padding: 5rem 0;
 }

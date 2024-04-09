@@ -45,7 +45,7 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class="testimonials container">
         <SectionCardHeader class="header" :header="testimonialHeader" />
         <div class="grid">
             <template v-for="card in testimonials">
@@ -55,13 +55,4 @@ export default {
     </div>
 </template>
 
-<style scoped>
-.header {
-    text-align: center;
-}
-
-.grid {
-    display: flex;
-    justify-content: space-between;
-}
-</style>
+<style scoped></style>

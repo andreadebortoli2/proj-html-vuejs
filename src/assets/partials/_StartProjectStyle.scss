@@ -4,17 +4,16 @@
     @include background-primary;
 
     .container {
-
         display: flex;
         justify-content: space-between;
         position: relative;
-        padding: 5rem 0 2rem;
 
         .left {
             width: 50%;
             text-align: center;
 
             img {
+
                 height: 70%;
             }
 
