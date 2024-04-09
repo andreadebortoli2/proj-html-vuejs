@@ -1,0 +1,68 @@
+@use './Variables.scss' as *;
+
+#start_project {
+    @include background-primary;
+
+    .container {
+
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 5rem 0 2rem;
+
+        .left {
+            width: 50%;
+            text-align: center;
+
+            img {
+                height: 70%;
+            }
+
+            .top_image {
+                position: absolute;
+                top: 7.5rem;
+                left: 16rem;
+            }
+        }
+
+        .right {
+            width: 50%;
+            padding-right: 4rem;
+            margin-top: 3rem;
+            flex-grow: 2;
+
+            h5 {
+                color: $text-color-secondary;
+            }
+
+            .title {
+                color: $text-color-secondary;
+
+                font-weight: 100;
+                font-size: 4rem;
+            }
+
+            .title.bold {
+                font-weight: 900;
+            }
+
+
+            p {
+                color: $text-color-bluecard;
+                font-size: 1rem;
+                font-weight: 100;
+                padding: 2rem 0 4rem;
+                width: 70%
+            }
+
+            .try {
+                @include button-try
+            }
+
+            .explore {
+                @include button-explore;
+
+            }
+        }
+    }
+}
