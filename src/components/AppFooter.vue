@@ -13,29 +13,32 @@ export default {
 
 <template>
     <div id="site_footer">
-        <div class="footer_utilities">
-            <div class="logo">
-                <img src="/public/images/white-logo-2.png" alt="">
-                <div>
-                    When, while lovelly valley teems vapour around me and meridian sun strikes the upper impenetrable
+        <div class="container">
+            <div class="footer_utilities">
+                <div class="logo">
+                    <img src="/public/images/white-logo-2.png" alt="">
+                    <div>
+                        When, while lovelly valley teems vapour around me and meridian sun strikes the upper
+                        impenetrable
+                    </div>
                 </div>
-            </div>
-            <div class="quick_links">
-                <h6>Quick Links</h6>
-                <ul v-for="link in store.quickLinks">
-                    <li>{{ link }}</li>
-                </ul>
-            </div>
-            <div class="resources">
-                <h6>Resources</h6>
-                <ul v-for="link in store.resources">
-                    <li>{{ link }}</li>
-                </ul>
-            </div>
-            <div class="contact_us" id="Contact">
-                <h6>Contacts Us</h6>
-                <div v-for="(contact, key) in store.contacts">
-                    <span>{{ key }}:</span> {{ contact }}
+                <div class="quick_links">
+                    <h4>Quick Links</h4>
+                    <ul v-for="link in store.quickLinks">
+                        <li>{{ link }}</li>
+                    </ul>
+                </div>
+                <div class="resources">
+                    <h4>Resources</h4>
+                    <ul v-for="link in store.resources">
+                        <li>{{ link }}</li>
+                    </ul>
+                </div>
+                <div class="contact_us" id="Contact">
+                    <h4>Contacts Us</h4>
+                    <div class="contact" v-for="(contact, key) in store.contacts">
+                        <span class="contact_type">{{ key }}:</span> {{ contact }}
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,26 +57,4 @@ export default {
     </div>
 </template>
 
-<style scoped>
-#site_footer {
-    background-color: paleturquoise;
-
-    .footer_utilities {
-        display: flex;
-        justify-content: space-between;
-
-        div {
-            width: 200px;
-        }
-    }
-
-    .footer_end {
-        display: flex;
-        justify-content: space-between;
-
-        i {
-            padding: 0 0.5rem;
-        }
-    }
-}
-</style>
+<style scoped></style>

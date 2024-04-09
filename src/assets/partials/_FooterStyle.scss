@@ -1,0 +1,64 @@
+@use './Variables.scss' as *;
+
+#site_footer {
+    @include background-primary;
+    padding-top: 10rem;
+
+    .footer_utilities {
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            color: $text-color-bluecard;
+
+            div {
+                padding-top: 1.5rem;
+            }
+        }
+
+        h4 {
+            color: $text-color-nav;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                padding: 0.3rem 0;
+                color: $text-color-bluecard;
+            }
+        }
+
+        div {
+            width: 200px;
+        }
+
+        .contact {
+            padding: 0.3rem 0;
+            color: $text-color-bluecard;
+
+            .contact_type {
+                font-weight: 600;
+                color: $text-color-nav;
+            }
+        }
+    }
+
+    .footer_end {
+        width: 90%;
+        padding-bottom: 1rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .copyrights {
+            color: $text-color-bluecard;
+        }
+
+        .socials {
+            display: flex;
+            gap: 1rem;
+            color: $text-color-nav;
+        }
+    }
+}
