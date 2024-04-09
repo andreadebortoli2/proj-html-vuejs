@@ -1,6 +1,6 @@
 <script>
 import { defineComponent } from 'vue'
-import { Carousel, Navigation, Slide } from 'vue3-carousel'
+import { Carousel, Slide, Pagination } from 'vue3-carousel'
 
 import 'vue3-carousel/dist/carousel.css'
 
@@ -9,7 +9,7 @@ export default defineComponent({
     components: {
         Carousel,
         Slide,
-        Navigation,
+        Pagination
     },
     props: {
         slidesList: Array,
@@ -40,14 +40,61 @@ export default defineComponent({
                 </div>
             </div>
         </Slide>
+        <template #addons>
+            <Pagination />
+        </template>
     </Carousel>
 
 </template>
 <style scoped>
-/* .carousel__prev,
-.carousel__next {} */
+/*style slides.
+/* .carousel__slide {
+  scroll-snap-stop: auto;
+  flex-shrink: 0;
+  margin: 0;
+  position: relative;
 
-/* .carousel__slide:hover {
-    border: 2px solid orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+} */
+/* style pagination:
+/* .carousel__pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  line-height: 0;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.carousel__pagination-button {
+  display: block;
+  border: 0;
+  margin: 0;
+  cursor: pointer;
+  padding: var(--vc-pgn-margin);
+  background: transparent;
+}
+
+.carousel__pagination-button::after {
+  display: block;
+  content: '';
+  width: var(--vc-pgn-width);
+  height: var(--vc-pgn-height);
+  border-radius: var(--vc-pgn-border-radius);
+  background-color: var(--vc-pgn-background-color);
+}
+
+.carousel__pagination-button--active::after {
+  background-color: var(--vc-pgn-active-color);
+}
+
+@media(hover: hover) {
+  .carousel__pagination-button:hover::after {
+    background-color: var(--vc-pgn-active-color);
+  }
 } */
 </style>

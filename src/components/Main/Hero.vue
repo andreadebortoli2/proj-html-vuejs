@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-    <div id="hero">
+    <div class="container" id="hero">
         <div class="left">
             <BlueCard :card="card" />
         </div>
@@ -28,22 +28,4 @@ export default {
     </div>
 </template>
 
-<style scoped>
-#hero {
-    background-color: paleturquoise;
-    display: flex;
-    justify-content: space-between;
-
-    .left {
-        width: 200px;
-    }
-
-    .right {
-        width: 400px;
-
-        img {
-            width: 100%;
-        }
-    }
-}
-</style>
+<style scoped></style>

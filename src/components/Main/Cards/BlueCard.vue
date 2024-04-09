@@ -10,8 +10,8 @@ export default {
 <template>
     <div class="card">
         <h5 v-if="card.section">{{ card.section }}</h5>
-        <div class="title" v-for="title in card.titles">
-            <h2>{{ title }}</h2>
+        <div class="title" :class="{ bold: index % 2 === 0 }" v-for="(title, index) in card.titles">
+            {{ title }}
         </div>
         <p>{{ card.text }}</p>
         <button class="try">Try It Now</button>

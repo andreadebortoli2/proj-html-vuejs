@@ -1,0 +1,35 @@
+$background-color-secondary: #FFFFFF;
+$text-color-primary: #000000;
+$text-color-secondary: #FFFFFF;
+$text-color-nav: #E0E0E0;
+$text-color-bluecard: #FFFFFF1F;
+$button-try-color-primary: #B6246E;
+$button-try-color-secondary: #F9636B;
+$button-explore-color-primary: #527CEB;
+$button-explore-color-secondary: #03A7D3E6;
+$button-try-background: linear-gradient(to right, #B6246E, #F9636B);
+
+@mixin background-primary {
+    background-color: #527CEB;
+    background-image: linear-gradient(#000000B3, #000000E6);
+}
+
+@mixin button-try {
+    color: $text-color-nav;
+    background-image: linear-gradient(to right, #B6246E, #F9636B), linear-gradient(to right, #FFFFFFE6, #FFFFFFD4);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    height: 2rem;
+}
+
+@mixin button-explore {
+    color: $text-color-nav;
+    background-image: linear-gradient(to right, #03A7D3E6, #527CEB), linear-gradient(to right, #000000B3, #000000E6);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    height: 2rem;
+}

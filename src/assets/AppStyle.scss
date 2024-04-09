@@ -1,0 +1,18 @@
+@use './partials/Variables.scss' as *;
+@use './partials/HeaderStyle';
+@use './partials/BlueCard';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background_primary: #527CEB
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}

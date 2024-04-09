@@ -1,5 +1,4 @@
 <script>
-import Hero from './Main/Hero.vue';
 import Service from './Main/Service.vue';
 import StartProject from './Main/StartProject.vue';
 import Portfolio from './Main/Portfolio.vue';
@@ -11,7 +10,6 @@ import Subscribe from './Main/Subscribe.vue';
 export default {
     name: 'AppMain',
     components: {
-        Hero,
         Service,
         StartProject,
         Portfolio,
@@ -45,7 +43,6 @@ export default {
 </script>
 
 <template>
-    <Hero />
     <Service />
     <StartProject />
     <Portfolio />

@@ -1,0 +1,68 @@
+@use './Variables.scss' as *;
+
+#site_header {
+    @include background-primary;
+    padding: 1rem 0 3rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        .logo {
+            height: 2.5rem;
+        }
+
+        .right_side {
+            display: flex;
+            align-items: center;
+
+            .nav_bar {
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+
+
+                .home {
+                    color: $button-try-color-secondary;
+                }
+
+                li {
+                    padding: 0 1rem;
+                    color: $text-color-nav;
+
+                    a {
+                        color: $text-color-nav;
+                        text-decoration: none;
+
+                    }
+                }
+            }
+
+            button {
+                @include button-explore;
+            }
+        }
+    }
+
+    #hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 0;
+
+        .left {
+            width: 50%;
+            padding-right: 4rem;
+            flex-grow: 2;
+        }
+
+        .right {
+            width: 50%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
