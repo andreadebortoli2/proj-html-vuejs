@@ -1,0 +1,10 @@
+@use './Variables.scss' as *;
+
+.partners {
+    display: flex;
+    justify-content: space-between;
+
+    .partner {
+        height: 100%;
+    }
+}

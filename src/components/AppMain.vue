@@ -49,19 +49,12 @@ export default {
     <PriceList />
     <Blog />
     <Testimonial />
-    <div class="partners">
+    <div class="partners container">
         <template v-for="partner in partners">
-            <img :src="partner.image" alt="">
+            <img class="partner" :src="partner.image" alt="">
         </template>
     </div>
     <Subscribe />
 </template>
 
-<style scoped>
-.partners {
-
-    img {
-        padding: 0 2rem;
-    }
-}
-</style>
+<style scoped></style>
