@@ -1,5 +1,5 @@
 <script>
-import SectionCardHeader from './SectionCardHeader.vue';
+import SectionCardHeader from './Cards/SectionCardHeader.vue';
 
 export default {
     name: 'Portfolio',

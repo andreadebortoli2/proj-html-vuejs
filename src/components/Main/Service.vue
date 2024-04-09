@@ -1,7 +1,6 @@
 <script>
-import SectionCardHeader from "./SectionCardHeader.vue";
+import SectionCardHeader from "./Cards/SectionCardHeader.vue";
 import ServiceCard from './Cards/ServiceCard.vue'
-import { store } from "../../store.js";
 
 export default {
     name: 'Service',
@@ -11,13 +10,30 @@ export default {
     },
     data() {
         return {
-            store,
             serviceHeader: {
                 id: 'Services',
                 section: 'Our Services',
                 title: 'What We Do',
                 subTitle: 'When, while the lovelly valley teems vapour around me and the',
-            }
+            },
+            ourServices: [
+                {
+                    title: 'Data Analysis',
+                    image: 'Group-247.png',
+                },
+                {
+                    title: 'SEO Optimization',
+                    image: 'Group-567.png',
+                },
+                {
+                    title: 'Security Data',
+                    image: 'Group-538.png',
+                },
+                {
+                    title: 'Branding Strategy',
+                    image: 'Group-566.png',
+                },
+            ],
         }
     }
 }
@@ -27,7 +43,7 @@ export default {
     <div>
         <SectionCardHeader class="header" :header="serviceHeader" />
         <div class="grid">
-            <template v-for="card in store.ourServices">
+            <template v-for="card in ourServices">
                 <ServiceCard :card="card" />
             </template>
         </div>
