@@ -24,7 +24,8 @@ export default {
                     <li class="home">Home</li>
                     <li>About</li>
                     <template v-for="link in store.quickLinks">
-                        <li><a :href="`#${link}`">{{ link }}</a>
+                        <li>
+                            <a :href="`#${link}`">{{ link }}</a>
                         </li>
                     </template>
                 </ul>

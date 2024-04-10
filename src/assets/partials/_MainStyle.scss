@@ -1,0 +1,30 @@
+@use './Variables.scss' as *;
+
+.back_to_top {
+    display: none;
+    position: fixed;
+    bottom: 3rem;
+    right: 4rem;
+    border-radius: 50%;
+    height: 2rem;
+    aspect-ratio: 1;
+    font-size: 0.7rem;
+
+}
+
+.back_to_top.show_btt {
+    display: inline-block;
+}
+
+.chatbot {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    height: 3rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.2rem;
+    color: $text-color-secondary;
+    background-color: $button-explore-color-primary;
+}

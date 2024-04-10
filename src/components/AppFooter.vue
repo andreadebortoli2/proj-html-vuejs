@@ -25,7 +25,9 @@ export default {
                 <div class="quick_links">
                     <h4>Quick Links</h4>
                     <ul v-for="link in store.quickLinks">
-                        <li>{{ link }}</li>
+                        <li>
+                            <a :href="`#${link}`">{{ link }}</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="resources">

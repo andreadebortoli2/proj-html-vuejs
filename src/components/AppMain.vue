@@ -37,8 +37,23 @@ export default {
                     image: '/public/images/client-3.png',
                 },
             ],
+            showBtt: false,
         }
-    }
+    },
+    methods: {
+        showScrollToTopButton() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                // console.log('scrolling');
+                this.showBtt = true;
+            } else {
+                // console.log('top');
+                this.showBtt = false;
+            }
+        }
+    },
+    mounted() {
+        window.addEventListener('scroll', this.showScrollToTopButton);
+    },
 }
 </script>
 
@@ -57,6 +72,10 @@ export default {
         </div>
     </div>
     <Subscribe />
+    <button class="back_to_top" :class="{ show_btt: showBtt }">
+        <a href="#site_header"><i class="fa-solid fa-arrow-up"></i></a>
+    </button>
+    <button class="chatbot"><i class="fa-regular fa-comment fa-flip-horizontal"></i></button>
 </template>
 
 <style scoped></style>
