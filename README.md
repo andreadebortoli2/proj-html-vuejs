@@ -38,6 +38,6 @@ props, creando una struttura dati idonea.
     -portfolio carousel D
     -add 'logic' to back to top button D
     -add chat baloon just fixed without function D
-    -look for image in testimonials rating background !!!!
+    -look for image in testimonials rating background D
     -select arrow iscons from image !!!!
     -find the correct font D

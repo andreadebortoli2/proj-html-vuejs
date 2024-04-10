@@ -31,8 +31,15 @@
                 -webkit-text-fill-color: transparent;
             }
 
+            .stars_background {
+                opacity: 0.2;
+                transform: translate(-0.4rem, -3.2rem);
+                height: 0;
+            }
+
             p {
                 margin: 0 auto;
+                padding-top: 0.7rem;
                 color: $text-small-color;
             }
 
