@@ -2,6 +2,7 @@
 
 .price_list {
     @include background-primary;
+    height: 37rem;
 
     .section_title {
         color: $text-color-secondary;
@@ -12,7 +13,7 @@
     }
 
     .prices {
-        padding-top: 2rem;
+        padding-top: 4rem;
 
         .card {
             position: relative;
