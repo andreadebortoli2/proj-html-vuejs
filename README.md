@@ -40,4 +40,4 @@ props, creando una struttura dati idonea.
     -add chat baloon just fixed without function D
     -look for image in testimonials rating background !!!!
     -select arrow iscons from image !!!!
-    -find the correct font !!!!
+    -find the correct font D
