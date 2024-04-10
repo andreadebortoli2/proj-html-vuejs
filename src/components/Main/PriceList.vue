@@ -19,7 +19,7 @@ export default {
             offers: [
                 {
                     title: 'Design',
-                    subTitle: 'process',
+                    subTitle: ' PROCESS',
                     price: 40,
                     features: [
                         {
@@ -46,7 +46,7 @@ export default {
                 },
                 {
                     title: 'Developing',
-                    subTitle: 'product',
+                    subTitle: 'PRODUCT',
                     price: 60,
                     features: [
                         {
@@ -73,7 +73,7 @@ export default {
                 },
                 {
                     title: 'Supporting',
-                    subTitle: 'clients',
+                    subTitle: 'CLIENTS',
                     price: 80,
                     features: [
                         {
@@ -105,12 +105,14 @@ export default {
 </script>
 
 <template>
-    <div>
-        <SectionCardHeader class="header" :header="priceListHeader" />
-        <div class="prices">
-            <template v-for="offer in offers">
-                <PriceCard :card="offer" />
-            </template>
+    <div class="price_list">
+        <div class="container">
+            <SectionCardHeader class="header" :header="priceListHeader" />
+            <div class="prices">
+                <template v-for="(offer, index) in offers">
+                    <PriceCard :card="offer" :index="index" />
+                </template>
+            </div>
         </div>
     </div>
 </template>

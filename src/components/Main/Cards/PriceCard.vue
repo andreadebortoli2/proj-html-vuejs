@@ -3,30 +3,44 @@ export default {
     name: 'PriceCard',
     props: {
         card: Object,
+        index: Number,
     },
+    methods: {
+        evenIndex() {
+            let className = '';
+            if (this.index % 2 !== 0) {
+                className = 'even'
+            } else {
+                className = 'odd'
+            }
+
+            return className
+        }
+    }
 }
 </script>
 
 <template>
-    <div class="card" :class="card.title">
+    <div class="card" :class="evenIndex()">
         <h3>{{ card.title }}</h3>
-        <h4>{{ card.subTitle }}</h4>
+        <div>{{ card.subTitle }}</div>
+        <div class="background_price">{{ card.price }}</div>
         <div class="price">
-            $
-            <div>{{ card.price }}</div>
+            <div class="price_value">$</div>
+            <div class="price_tag">{{ card.price }}</div>
             Per Month
         </div>
-        <ul class="features" v-for="feature in card.features">
-            <li>{{ feature.name }} {{ feature.trait }}</li>
+        <ul class="features">
+            <li v-for="feature in card.features"><span class="bold">{{ feature.name }}</span> {{ feature.trait }}</li>
         </ul>
-        <button>
-            <div>Order Now</div><i class="fa-solid fa-arrow-right"></i>
-        </button>
+        <div class="order">
+            <button>
+                <div>
+                    <span>Order Now</span><i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </button>
+        </div>
     </div>
 </template>
 
-<style scoped>
-ul {
-    list-style: none;
-}
-</style>
+<style scoped></style>

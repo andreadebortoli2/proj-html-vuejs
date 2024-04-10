@@ -1,0 +1,107 @@
+@use './Variables.scss' as *;
+
+.price_list {
+    @include background-primary;
+
+    .section_title {
+        color: $text-color-secondary;
+    }
+
+    .section_comment {
+        color: $text-color-nav;
+    }
+
+    .prices {
+        padding-top: 2rem;
+
+        .card {
+            position: relative;
+            padding: 3rem 0;
+            text-align: center;
+            width: 30%;
+            border-radius: 2rem;
+
+            div {
+                font-size: 0.9rem;
+            }
+
+            h3 {
+                font-size: 2rem;
+                padding: 1rem 0;
+                font-weight: 700;
+            }
+
+            .background_price {
+                position: absolute;
+                top: -4.5rem;
+                right: -0.5rem;
+                font-size: 20rem;
+                font-weight: 900;
+                z-index: 0;
+                opacity: 0.3;
+            }
+
+            .price {
+                padding: 1rem 0;
+                width: 20%;
+                margin: 0 auto;
+
+                .price_value {
+                    text-align: left;
+                }
+
+                .price_tag {
+                    font-size: 5rem;
+                    font-weight: 700;
+                    padding: 1rem 0;
+                }
+            }
+
+            .features {
+                padding: 1rem 0 2rem;
+                list-style: none;
+
+                li {
+                    line-height: 2rem;
+
+                    .bold {
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            button {
+                color: $text-color-nav;
+                background-image: linear-gradient(#B6246E, #F9636B), linear-gradient(to right, #FFFFFFE6, #FFFFFFD4);
+                border: none;
+                border-radius: 1rem;
+                padding: 0.5rem 1rem;
+                margin: 0 0.5rem;
+                height: 2rem;
+                width: 40%;
+
+                div {
+                    display: flex;
+                    justify-content: space-around;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .odd {
+            background-color: $background-color-secondary;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        .even {
+            @include background-even-price-card;
+            color: $text-color-secondary;
+
+            button {
+                background-color: $background-color-secondary;
+                background-image: none;
+                color: $button-try-color-secondary;
+            }
+        }
+    }
+}
