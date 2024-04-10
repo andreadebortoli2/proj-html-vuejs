@@ -41,3 +41,4 @@ props, creando una struttura dati idonea.
     -look for image in testimonials rating background D
     -select arrow iscons from image !!!!
     -find the correct font D
+    -add scroll smooth on link scroll D
