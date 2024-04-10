@@ -27,6 +27,8 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: flex-end;
+                background-color: #000000B3;
+                border-radius: 2rem;
 
                 .details {
                     width: 70%;
@@ -75,14 +77,17 @@
                 }
 
                 .link {
+                    background-color: $background-color-secondary;
+                    padding: 0.5rem 2rem;
+                    border-radius: 2rem;
+                    border: none;
+                    margin-top: 3rem;
+                    width: fit-content;
+
 
                     a {
                         text-decoration: none;
                         color: $text-color-primary;
-                        background-color: $background-color-secondary;
-                        padding: 0.5rem;
-                        border-radius: 2rem;
-                        margin-top: 3rem;
                     }
                 }
             }

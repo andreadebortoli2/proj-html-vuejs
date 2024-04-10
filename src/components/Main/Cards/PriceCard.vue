@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-    <div class="card">
+    <div class="card" :class="card.title">
         <h3>{{ card.title }}</h3>
         <h4>{{ card.subTitle }}</h4>
         <div class="price">
@@ -19,6 +19,9 @@ export default {
         <ul class="features" v-for="feature in card.features">
             <li>{{ feature.name }} {{ feature.trait }}</li>
         </ul>
+        <button>
+            <div>Order Now</div><i class="fa-solid fa-arrow-right"></i>
+        </button>
     </div>
 </template>
 

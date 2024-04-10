@@ -22,8 +22,12 @@ $carousel-pagination-active: linear-gradient(#B6246E, #F9636B), linear-gradient(
 
 @mixin background-post {
     background-color: #527CEB;
-    background-image: linear-gradient(to bottom right, #000000E6, #000000B3);
+    background-image: linear-gradient(to bottom right, #000000E6, #0202301A);
+}
 
+@mixin background-service-card-hover {
+    background-color: #527CEB;
+    background-image: linear-gradient(#0202301A, #000000B3);
 }
 
 @mixin button-try {

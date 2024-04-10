@@ -16,17 +16,69 @@
         .card {
             text-align: center;
 
-            img {
-                width: 30%;
-                height: 50%;
-                padding-bottom: 2rem;
+            .image {
+                border-radius: 2rem;
+                padding: 3rem 2rem 1rem;
+                aspect-ratio: 1;
+                width: 70%;
+                margin: 0 auto;
+                transform: translate(0, 6rem);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    padding-bottom: 2rem;
+                }
             }
 
-            p {
-                width: 50%;
-                margin: 0 auto;
-                padding-top: 2rem;
-                color: $text-small-color;
+            .text {
+                padding: 7rem 0 3rem;
+                border-radius: 1.5rem;
+
+                p {
+                    width: 50%;
+                    margin: 0 auto;
+                    padding-top: 2rem;
+                    color: $text-small-color;
+                }
+            }
+
+            button {
+                display: none;
+                border-radius: 50%;
+                aspect-ratio: 1;
+                padding: 1rem;
+                font-size: 1rem;
+                color: $text-color-secondary;
+                background-color: transparent;
+                background-image: $button-try-color-background;
+                border: none;
+                transform: translate(0, -50%);
+            }
+        }
+
+        .card:hover {
+
+            .image {
+                background-color: $background-color-secondary;
+                box-shadow: 0px 0px 70px -20px rgba(0, 0, 0, 0.75);
+                width: 70%;
+            }
+
+            .text {
+                @include background-service-card-hover;
+
+                h2 {
+                    color: $text-color-secondary;
+                }
+
+                p {
+                    color: $text-color-nav;
+                }
+            }
+
+            button {
+                display: inline-block;
             }
         }
     }

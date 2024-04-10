@@ -21,9 +21,9 @@ export default {
                 <h4>{{ post.title }}</h4>
                 <p>{{ post.text }}</p>
             </div>
-            <div class="link">
+            <button class="link">
                 <a href="">Read More</a>
-            </div>
+            </button>
         </div>
     </div>
 </template>

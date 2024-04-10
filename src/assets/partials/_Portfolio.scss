@@ -11,7 +11,6 @@
 
     .carousel {
 
-
         .commands {
             position: relative;
             width: 90%;
@@ -50,12 +49,24 @@
             transform: translate(-5.2rem, 0);
         }
 
+        .carousel__slide:hover {
+            background-image: $button-try-color-background;
+
+            .title {
+                color: $text-color-secondary;
+            }
+
+            .comment {
+                color: $text-color-bluecard;
+            }
+        }
+
         img {
             border-radius: 2rem;
         }
 
         .card_details {
-            padding: 1rem;
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
 
